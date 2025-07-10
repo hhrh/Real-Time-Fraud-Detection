@@ -1,4 +1,4 @@
-# Real-Time Fraud Detection System ⚙️
+# Real-Time Fraud Detection System
 
 A production-style real-time fraud detection pipeline using **Kafka**, **FastAPI**, **XGBoost/CatBoost/LightGBM**, **Prometheus**, and **Grafana**.
 
@@ -21,12 +21,12 @@ This project simulates real-time credit card transactions and detects fraudulent
 ```mermaid
 %%{init: {'theme': 'dark', 'themeVariables': { 'fontSize': '30px', 'fontFamily': 'sans-serif'}}}%%
 flowchart LR
-  Simulator["✉️ <br>data_simulator.py<br>Simulated Transactions"]
-  Kafka["📥 <br>Kafka Broker"]
-  Consumer["📝<br>consumer.py<br>Kafka Consumer"]
-  FastAPI["🧠<br>inference.py<br>(/predict)<br>ML Inference"]
-  Prometheus["🧮 <br>Prometheus<br>/metrics scraping"]
-  Grafana["📊 <br>Grafana Dashboards"]
+  Simulator["✉<br>data_simulator.py<br>Simulated Transactions"]
+  Kafka["<br>Kafka Broker"]
+  Consumer["<br>consumer.py<br>Kafka Consumer"]
+  FastAPI["<br>inference.py<br>(/predict)<br>ML Inference"]
+  Prometheus["<br>Prometheus<br>/metrics scraping"]
+  Grafana["<br>Grafana Dashboards"]
 
   Simulator --> Kafka
   Kafka --> Consumer
@@ -97,5 +97,4 @@ Note: To use another model (e.g. LightGBM, CatBoost, XGBoost), set the MODEL_NAM
 - REST API auth layer (JWT / API Key)
 - Model versioning support
 ## License
-Copyright (c) 2025 Hardy Fenam  
-Licensed under the MIT License
+Copyright © 2025 Hardy Fenam All Rights Reserved.
