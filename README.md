@@ -21,12 +21,12 @@ This project simulates real-time credit card transactions and detects fraudulent
 ```mermaid
 %%{init: {'theme': 'dark', 'themeVariables': { 'fontSize': '30px', 'fontFamily': 'sans-serif'}}}%%
 flowchart LR
-  Simulator["✉<br>data_simulator.py<br>Simulated Transactions"]
-  Kafka["<br>Kafka Broker"]
-  Consumer["<br>consumer.py<br>Kafka Consumer"]
-  FastAPI["<br>inference.py<br>(/predict)<br>ML Inference"]
-  Prometheus["<br>Prometheus<br>/metrics scraping"]
-  Grafana["<br>Grafana Dashboards"]
+  Simulator["data_simulator.py<br>Simulated Transactions"]
+  Kafka["Kafka Broker"]
+  Consumer["consumer.py<br>Kafka Consumer"]
+  FastAPI["inference.py<br>(/predict)<br>ML Inference"]
+  Prometheus["Prometheus<br>/metrics scraping"]
+  Grafana["Grafana Dashboards"]
 
   Simulator --> Kafka
   Kafka --> Consumer
@@ -98,3 +98,4 @@ Note: To use another model (e.g. LightGBM, CatBoost, XGBoost), set the MODEL_NAM
 - Model versioning support
 ## License
 Copyright © 2025 Hardy Fenam All Rights Reserved.
+Unauthorized use, reproduction, modification, or distribution of any part of this codebase is strictly prohibited.
